@@ -1,8 +1,8 @@
 import Template from './Template.js';
 
 export class Dashboard extends Template {
-    constructor(){
-        super();
+    constructor(params){
+        super(params);
         this.setTitle("Dashboard");
     }
 

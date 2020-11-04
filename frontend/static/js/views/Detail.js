@@ -1,16 +1,16 @@
 import Template from './Template.js';
 
-export class Settings extends Template {
+export class Detail extends Template {
     constructor(params){
         super(params);
-        this.setTitle("Settings");
+        this.setTitle("Detail");
     }
 
     async getHtml(){
         return `
-        <h1>설정</h1>
+        <h1>${this.params.id}번 게시글</h1>
         <p>
-            설정
+            this is content!
         </p>
         `
     }
