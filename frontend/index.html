@@ -4,15 +4,27 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="/static/css/index.css">
+    <script defer src="https://use.fontawesome.com/releases/v5.14.0/js/all.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.1/css/bulma.min.css">
     <title>Single Page App</title>
 </head>
 <body>
     <nav class="nav">
         <a href="/" class="nav__link" data-link>Dashboard</a>
         <a href="/posts" class="nav__link" data-link>Posts</a>
-        <a href="/settings" class="nav__link" data-link>Settings</a>
     </nav>
-    <div id="app"></div>
+
+    <section id="app" class="section"></section>
+
+    <footer class="footer">
+        <div class="content has-text-centered">
+        <p>
+        <strong>Bulma</strong> by <a href="https://jgthms.com">Jeremy Thomas</a>. The source code is licensed
+        <a href="http://opensource.org/licenses/mit-license.php">MIT</a>. The website content
+        is licensed <a href="http://creativecommons.org/licenses/by-nc-sa/4.0/">CC BY NC SA 4.0</a>.
+        </p>
+        </div>
+    </footer>
     <script type="module" src="/static/js/app.js"></script>
 </body>
 </html>
