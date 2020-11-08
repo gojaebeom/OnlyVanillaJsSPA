@@ -5,5 +5,21 @@
 }
 
 .section {
+    display:flex;
+    flex-wrap: wrap;
+    border:1px solid black;
     min-height: 100vh;
+}
+
+.section article{
+    flex:1;
+    border:1px solid red;
+}
+
+.section article.left, .section article.right{
+    max-width:400px;
+}
+
+.section article.center {
+    max-width:600px;
 }

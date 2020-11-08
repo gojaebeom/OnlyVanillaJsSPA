@@ -1,9 +1,9 @@
-import { Dashboard } from './views/Dashboard.js';
-import { Detail } from './views/Detail.js';
+import { Home } from './views/Home.js';
 import { Posts } from './views/Posts.js';
+import { Detail } from './views/Detail.js';
+
 
 const pathToRegex = path => new RegExp("^" + path.replace(/\//g, "\\/").replace(/:\w+/g,"(.+)")+"$");
-
 
 const getParams = match => {
     const values = match.result.slice(1);
@@ -14,7 +14,6 @@ const getParams = match => {
     }));
 };
 
-
 const navigateTo = url => {
     history.pushState(null, null, url);
     router();
@@ -22,20 +21,20 @@ const navigateTo = url => {
 
 const router = async () => {
     const routes = [
-        { path:'/', view: Dashboard },
+        { path:'/', view: Home },
         { path:'/posts', view: Posts },
         { path:'/posts/:id', view: Detail },
     ];
 
-    const potentialMatches = routes.map(route => {
+    const pathMatches = routes.map(route => {
         return {
             route: route,
             result: location.pathname.match(pathToRegex(route.path))
         }
     });
 
-    let match = potentialMatches.find(potentialMatch => {
-        return potentialMatch.result !== null
+    let match = pathMatches.find(match => {
+        return match.result !== null
     });
 
     if(!match){

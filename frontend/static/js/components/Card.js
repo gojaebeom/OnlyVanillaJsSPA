@@ -1,7 +1,7 @@
 const Card = (prop) => {
-return`
+return `
 <!-- card -->
-<div class="card" style="margin:10px;">
+<div class="card" style="margin:10px;width:600px;">
     <div class="card-image">
         <figure class="image is-4by3">
         <img src="https://bulma.io/images/placeholders/1280x960.png" alt="Placeholder image">
