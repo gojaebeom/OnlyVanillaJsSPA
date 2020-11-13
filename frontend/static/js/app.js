@@ -22,8 +22,10 @@ const navigateTo = url => {
 const router = async () => {
     const routes = [
         { path:'/', view: Home },
+        { path:'/users/:id', view: Home },
         { path:'/posts', view: Posts },
         { path:'/posts/:id', view: Detail },
+        { path:'/categories', view: Detail },
     ];
 
     const pathMatches = routes.map(route => {
@@ -38,6 +40,9 @@ const router = async () => {
     });
 
     if(!match){
+        console.log('안맞음');
+        console.log(match);
+        console.log(routes[0]);
         match = {
             route: routes[0],
             result: [location.pathname]

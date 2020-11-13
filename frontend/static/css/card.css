@@ -1,0 +1,134 @@
+.card{
+    display:flex;
+    flex-direction: column;
+    justify-content:flex-start;
+    align-items: center;
+    width:100%;
+    height:500px;
+    border-radius:3px;
+    background-color:white;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.05), 0 0 1px rgba(0,0,0,0.1);
+    margin-bottom:20px;
+}
+
+/*** profile-card 🎨 ***/
+.profile-card{
+    display:flex;
+    flex-direction: column;
+    justify-content:flex-start;
+    align-items: center;
+    width:100%;
+    border-radius:3px;
+    background-color:white;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.05), 0 0 1px rgba(0,0,0,0.1);
+    margin-bottom:20px;
+}
+.profile-card-image-wrap{
+    margin-top:30px;
+    width:150px;
+    height:150px;
+    border-radius:100%;
+    overflow: hidden;
+}
+.profile-card-image-wrap img{
+    width:100%;
+    height:100%;
+}
+
+.profile-card-info-wrap{
+    margin-top:10px;
+    display:flex;
+    flex-direction: column;
+    justify-content:flex-start;
+    align-items:center;
+}
+.profile-card-info-wrap h2, h3{
+    margin:0px;
+    font-weight:normal;
+}
+.profile-card-info h2{
+    margin-bottom:5px;
+    font-weight:normal;
+}
+
+.profile-card-content-wrap{
+    width:100%;
+    margin-top:30px;
+    display:flex;
+    margin-bottom:20px;
+}
+.profile-card-content-wrap > div{
+    flex:1;
+    display:flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    margin:0px 10px;
+}
+.profile-card-content-wrap > div .key{
+    font-size:10px;
+    margin-bottom:5px;
+}
+.profile-card-content-wrap > div .value{
+    font-size:30px;
+}
+.profile-card-fallow-btn{
+    width:80%;
+    border-radius:30px;
+    border:none;
+    background-color: #3273dc;
+    padding:8px 0px;
+    color:white;
+    margin-bottom:30px;
+}
+
+/*** post-card 🎨 ***/
+.post-card{
+    display:flex;
+    flex-direction: column;
+    justify-content:flex-start;
+    align-items: center;
+    width:100%;
+    border-radius:3px;
+    background-color:white;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.05), 0 0 1px rgba(0,0,0,0.1);
+    margin-bottom:20px;
+    padding:10px 15px;
+}
+.post-card-header{
+    width:100%;
+    display:flex;
+    justify-content:flex-start;
+    align-items:center;
+}
+.post-card-title-wrap{
+    width:100%;
+    padding:8px 15px;
+}
+.post-card-thumbnail-wrap{
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    width:60px;
+    height:60px;
+    overflow: hidden;
+    border:1px solid black;
+}
+.post-card-thumbnail-wrap img{
+    width:100%;
+    height:100%;
+}
+
+@media (min-width:1024px){
+    
+}
+
+@media (min-width:768px) and (max-width:1023px){
+
+}
+
+@media screen and (max-width:767px){
+    .card{
+        border-radius:0px;
+    }
+}

@@ -3,28 +3,44 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="/static/css/index.css">
+    <link rel="stylesheet" href="static/css/main.css">
+    <link rel="stylesheet" href="static/css/navbar.css">
+    <link rel="stylesheet" href="static/css/home.css">
+    <link rel="stylesheet" href="static/css/card.css">
+    <link href="https://fonts.googleapis.com/css2?family=Nanum+Gothic&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Fredoka+One&display=swap" rel="stylesheet">
     <script defer src="https://use.fontawesome.com/releases/v5.14.0/js/all.js"></script>
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.1/css/bulma.min.css">
-    <title>Single Page App</title>
+    <title>Document</title>
 </head>
 <body>
-    <nav class="nav">
-        <a href="/" class="nav__link" data-link>Dashboard</a>
-        <a href="/posts" class="nav__link" data-link>Posts</a>
-    </nav>
-
-    <section id="app" class="section"></section>
+    <header class="header">
+        <nav class="nav">
+            <figure class="logo"><a href="/" data-link>제로부터 시작하는 개발일지</a></figure>
+            <nav class="menu-wrapper">
+                <ul class="menu">
+                    <li><a href="/" data-link>홈</a></li>
+                    <li><a href="/categories" data-link>카테고리</a></li>
+                    <li><a href="/works" data-link>포트폴리오</a></li>
+                    <li><a href="/tags" data-link>태그</a></li>
+                </ul>
+                <ul class="login-menu">
+                    <li><a href="/login" data-link>login</a></li>
+                </ul>
+            </nav>
+            <div class="toggle-wrapper">
+                <i class="fas fa-hamburger"></i>
+                <i class="fas fa-times"></i>
+            </div>
+        </nav>
+    </header>
+    
+    <div id="app"></div>
 
     <footer class="footer">
-        <div class="content has-text-centered">
-        <p>
-        <strong>Bulma</strong> by <a href="https://jgthms.com">Jeremy Thomas</a>. The source code is licensed
-        <a href="http://opensource.org/licenses/mit-license.php">MIT</a>. The website content
-        is licensed <a href="http://creativecommons.org/licenses/by-nc-sa/4.0/">CC BY NC SA 4.0</a>.
-        </p>
+        <div class="footer-content-wrap">
+
         </div>
     </footer>
-    <script type="module" src="/static/js/app.js"></script>
+    <script type="module" src="static/js/app.js"></script>
 </body>
 </html>
